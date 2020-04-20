@@ -14,7 +14,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        // 다시쓰기(reset) 버튼
+        // 다시쓰기 버튼
         reset_btn.setOnClickListener {
 
             var toast = Toast.makeText(this, "모든내용이 다 지워집니다.", Toast.LENGTH_SHORT)
