@@ -5,54 +5,26 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".MainActivity">
-  <LinearLayout
-      android:orientation="vertical"
-      android:layout_width="match_parent"
-      android:layout_height="match_parent"
-      android:layout_marginTop="50dp"
-      android:weightSum="1">
-      <EditText
-          android:id="@+id/title_input"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:hint="제목을 입력해주세요"
-          android:layout_weight="0.05"
-          android:gravity="center"/>
+    <LinearLayout
+        android:id="@+id/list_layout"
+        android:weightSum="10"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
 
-        <EditText
-            android:id="@+id/content_input"
-            android:inputType="text"
+        <ListView
+            android:id="@+id/memolist"
+            android:layout_weight="8"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"/>
+
+        <Button
+            android:id="@+id/memo_btn"
+            android:layout_weight="2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:hint="내용을 입력해주세요"
-            android:layout_weight="0.8"
-            android:gravity="center"/>
-      <EditText
-          android:id="@+id/data_input"
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:hint="날짜 입력해주세요"
-          android:gravity="center"
-          android:inputType="date"/>
-      <LinearLayout
-          android:layout_width="match_parent"
-          android:layout_height="wrap_content"
-          android:orientation="horizontal"
-          android:weightSum="1">
-          <Button
-              android:id="@+id/reset_btn"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:text="다시쓰기"
-              android:layout_weight="0.5"/>
-          <Button
-              android:id="@+id/save_btn"
-              android:layout_width="match_parent"
-              android:layout_height="wrap_content"
-              android:text="저장하기"
-              android:layout_weight="0.5"/>
-      </LinearLayout>
+            android:text="메모추가하기" />
     </LinearLayout>
-
 </androidx.constraintlayout.widget.ConstraintLayout>
 
